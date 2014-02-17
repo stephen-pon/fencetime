@@ -7,7 +7,7 @@ class MainController < ApplicationController
     thursdayhours = "9:30PM - 11:00PM"
     @message = "Fencing has the room from "
     @answer = "YES"
-    currTime = Time.new(2014, 2, 23)
+    currTime = Time.new(2014, 2, 24)
     if currTime.monday?
       @currHours = mondayhours
     elsif currTime.wednesday?
