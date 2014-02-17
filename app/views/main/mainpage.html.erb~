@@ -1,10 +1,12 @@
 <html>
+ <body>
   <center>
     <br />
-    <h1 style="font-size:200px"><%= @answer %></h1>
+    <h1 style="font-size:100px"><%= @answer %></h1>
     <p>
       <%= @message %>
       <%= @currHours %>
     </p>
   </center> 
+ </body>
 </html>
