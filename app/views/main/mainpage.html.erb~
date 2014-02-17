@@ -1,0 +1,7 @@
+<html>
+  <center>
+    <br />
+    <h1><%= @answer %></h1>
+    <h4><%= @message @currHours %></h4>
+  </center>
+</html>

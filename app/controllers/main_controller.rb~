@@ -1,0 +1,24 @@
+class MainController < ApplicationController
+
+
+  def mainpage
+    mondayhours = "8:30PM - 11:30PM"
+    wednesdayhours = "10:30PM - 12:00AM"
+    thursdayhours = "9:30PM - 11:00PM"
+    @message = "Fencing has the room from "
+    @answer = "YES"
+    currTime = Time.new(2014, 2, 23)
+    if currTime.monday?
+      @currHours = mondayhours
+    elsif currTime.wednesday?
+      @currHours = wednesdayhours
+    elsif currTime.thursday?
+      @currHours = thursdayhours
+    else
+      @currHours = ""
+      @message = "Have fun!"
+      @answer = "NO"
+    end
+  end
+
+end
