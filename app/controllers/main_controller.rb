@@ -2,9 +2,9 @@ class MainController < ApplicationController
 
 
   def mainpage
-    mondayhours = "8:30PM - 11:30PM"
-    wednesdayhours = "10:30PM - 12:00AM"
-    thursdayhours = "9:30PM - 12:00PM"
+    mondayhours = "8:30PM - 12:00PM"
+    wednesdayhours = "8:30PM - 12:00AM"
+#    thursdayhours = "9:30PM - 12:00PM"
     @message = "Fencing has the room from "
     @answer = "YES"
     currTime = Time.now
